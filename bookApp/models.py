@@ -11,6 +11,7 @@ class Book(models.Model):
     # 自定义对应的表名，默认表名：bookApp_book
     class Meta:
         db_table = "books"
+        verbose_name_plural = '图书管理'
 class Hero(models.Model):
     name = models.CharField(max_length=20)     #name
     gender = models.BooleanField()  #sex
@@ -21,4 +22,5 @@ class Hero(models.Model):
     # 自定义对应的表名，默认表名：bookApp_hero
     class Meta:
         db_table = "heros"
+        verbose_name_plural = '人物管理'
 
